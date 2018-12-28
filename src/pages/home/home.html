@@ -1,18 +1,39 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+<ion-header mode="md">
+  <ion-navbar mode="md" color="primary" >
+    <button class="menu-btn" ion-button menuToggle>
+      <img class="menu-icon" src="assets/icon/menu.png"/>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title mode="md">
+      <img class="jingou-logo" src="assets/icon/logo.png"/>
+    </ion-title>
   </ion-navbar>
+
+  <div class="right-icons">
+    <div class="right-icons-top">
+      <button icon-only clear class="header-icon-btn"  ion-button >
+        <img class="notification-icon" src="assets/icon/notification.png"/>
+      </button>
+      <button icon-only clear class="header-icon-btn" ion-button >
+        <img class="profile-icon" src="assets/icon/profile.png"/>
+      </button>
+    </div>
+    <div class="right-icons-bottom">
+      <button  icon-only no-padding clear class="header-icon-btn"  ion-button >
+        <img class="halal-icon" src="assets/icon/Halal.png"/>
+      </button>
+      <button icon-only no-padding clear class="header-icon-btn" ion-button >
+        <img class="cart-icon" src="assets/icon/Cart.png"/>
+      </button>
+    </div>
+  </div>
+  <div class="left-icons">
+    <button color="light" no-padding clear class="crown-sm-icon-btn"  ion-button >
+      <img class="crown-sm-icon " src="assets/icon/crown-small.png"/>
+      450 Pts
+    </button>
+  </div>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>

@@ -14,3 +14,79 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.menu-icon{
+  height: 1em;
+}
+.jingou-logo{
+  margin-top: 0.8em;
+  width: 4em;
+}
+.back-icon{
+  font-size: 1.4em;
+}
+.header-icon-btn{
+  height: 2.2em;
+}
+.notification-icon{
+  height: 1.4em;
+}
+.profile-icon{
+  height: 1.4em;
+}
+
+
+.halal-icon{
+  height: 1.3em;
+}
+
+.cart-icon{
+  height: 1.4em;
+}
+ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 10px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.right-icons{
+  position: absolute;
+  display: block;
+  top:0;
+  right: 0;
+
+  margin-right: 1em;
+}
+.left-icons{
+  position: absolute;
+  display: block;
+  top:0;
+  left: 0;
+  margin-top: 2.5em;
+  margin-left: 1.2em;
+}
+
+.header-md{
+  height: 5em !important;
+  display: inline-block;
+  background: color($colors,primary);
+}
+ion-navbar.toolbar{
+  height: 100%;
+}
+.right-icons-bottom{
+  margin-top: -10px;
+  margin-left: -15px;
+}
+.crown-sm-icon-btn{
+  font-size: 1em;
+  text-transform: capitalize;
+}
+.crown-sm-icon{
+  height: 1em;
+}
