@@ -1,27 +1,30 @@
 <ion-header mode="md">
   <ion-navbar mode="md" color="primary" >
-    <button class="menu-btn" ion-button menuToggle>
+    <button mode="ios" class="menu-btn" ion-button menuToggle>
       <img class="menu-icon" src="assets/icon/menu.png"/>
     </button>
     <ion-title mode="md">
       <img class="jingou-logo" src="assets/icon/logo.png"/>
     </ion-title>
+    <ion-title color="light">
+      <span class="jingou-title">Total Daily Orders 25</span>
+    </ion-title>
   </ion-navbar>
 
   <div class="right-icons">
     <div class="right-icons-top">
-      <button icon-only clear class="header-icon-btn"  ion-button >
+      <button mode="md"  icon-only clear class="header-icon-btn"  ion-button >
         <img class="notification-icon" src="assets/icon/notification.png"/>
       </button>
-      <button icon-only clear class="header-icon-btn" ion-button >
+      <button mode="md" style="margin-left: 10px"  icon-only clear class="header-icon-btn " ion-button >
         <img class="profile-icon" src="assets/icon/profile.png"/>
       </button>
     </div>
-    <div class="right-icons-bottom">
-      <button  icon-only no-padding clear class="header-icon-btn"  ion-button >
+    <div text-right class="right-icons-bottom">
+      <button  mode="md" icon-only no-padding clear class="header-icon-btn"  ion-button >
         <img class="halal-icon" src="assets/icon/Halal.png"/>
       </button>
-      <button icon-only no-padding clear class="header-icon-btn" ion-button >
+      <button mode="md" icon-only no-padding clear class="header-icon-btn" ion-button >
         <img class="cart-icon" src="assets/icon/Cart.png"/>
       </button>
     </div>
@@ -29,11 +32,42 @@
   <div class="left-icons">
     <button color="light" no-padding clear class="crown-sm-icon-btn"  ion-button >
       <img class="crown-sm-icon " src="assets/icon/crown-small.png"/>
-      450 Pts
+      <span class="crown-icon-text">450 Pts</span>
     </button>
   </div>
 </ion-header>
 
 <ion-content padding>
+  <ion-fab  bottom right>
+    <button class="fab-icon-custom" style="border: 1px solid #000;box-shadow: 3px 3px 2px grey;" color="white" ion-fab icon-only >
+      <ion-icon  style="text-shadow: 2px 2px 5px #000;font-size: 2.5em" name="md-close"></ion-icon>
+    </button>
+  </ion-fab>
 
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
 </ion-content>
+
+<ion-footer >
+
+  <ion-fab style="top: -10px;" center>
+    <button color="primary" ion-fab icon-only >
+      <img class="cart-icon-toolbar" src="assets/icon/Cart.png"/>
+    </button>
+  </ion-fab>
+  <ion-toolbar color="light-primary" >
+  </ion-toolbar>
+</ion-footer>

@@ -1,3 +1,37 @@
 page-home {
+  .jingou-title{
+    opacity: 0;
+    font-weight: normal;
+    font-size: 0.8em;
+    color: white;
+    animation: jingou-title-animate 10s infinite ;
+  }
 
+  .jingou-logo{
+    animation: jingou-logo-animate 10s infinite ;
+  }
+  @keyframes jingou-title-animate {
+    10%   {opacity: 0}
+    20%   {opacity: 1}
+    30%   {opacity: 1}
+    40%   {opacity: 1}
+    50%   {opacity: 1}
+    60%   {opacity: 1}
+    70%   {opacity: 1}
+    80%   {opacity: 1}
+    90%   {opacity: 1}
+    100%   {opacity: 0}
+  }
+  @keyframes jingou-logo-animate {
+    10%   {opacity: 1}
+    20%   {opacity: 0}
+    30%   {opacity: 0}
+    40%   {opacity: 0}
+    50%   {opacity: 0}
+    60%   {opacity: 0}
+    70%   {opacity: 0}
+    80%   {opacity: 0}
+    90%   {opacity: 0}
+    100%   {opacity: 1}
+  }
 }

@@ -16,7 +16,9 @@
 // automatically applied to the <body> element in the app.
 
 .menu-icon{
-  height: 1em;
+  margin-top: -1.2em !important;
+  height: 1.4em;
+
 }
 .jingou-logo{
   margin-top: 0.8em;
@@ -29,19 +31,25 @@
   height: 2.2em;
 }
 .notification-icon{
-  height: 1.4em;
+  height: 1.6em;
 }
 .profile-icon{
-  height: 1.4em;
+  height: 1.6em;
+}
+.profile-icon-btn{
+  padding-left: 10px;
 }
 
 
 .halal-icon{
-  height: 1.3em;
+  height: 1.8em;
 }
 
 .cart-icon{
-  height: 1.4em;
+  height: 1.6em;
+}
+.cart-icon-toolbar{
+  height: 2em;
 }
 ion-title {
   position: absolute;
@@ -67,12 +75,12 @@ ion-title {
   display: block;
   top:0;
   left: 0;
-  margin-top: 2.5em;
-  margin-left: 1.2em;
+  margin-top: 2em;
+  margin-left: 0.9em;
 }
 
 .header-md{
-  height: 5em !important;
+  height: 4.5em !important;
   display: inline-block;
   background: color($colors,primary);
 }
@@ -81,12 +89,31 @@ ion-navbar.toolbar{
 }
 .right-icons-bottom{
   margin-top: -10px;
-  margin-left: -15px;
+  //margin-left: -20px;
+}
+.right-icons-top{
+  //text-align: center;
+  padding-left: 15px;
+
 }
 .crown-sm-icon-btn{
   font-size: 1em;
   text-transform: capitalize;
 }
 .crown-sm-icon{
-  height: 1em;
+  height: 1.2em;
+}
+.crown-icon-text{
+  margin-top: 0.4em;
+  font-size: 0.7em;
+}
+ion-header{
+  box-shadow: 0px 5px 2px grey;
+
+}
+ion-content{
+  text-align: justify;
+}
+.jingou-toolbar{
+  background: #ffd98f;
 }
