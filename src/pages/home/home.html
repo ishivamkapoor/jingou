@@ -7,7 +7,7 @@
       <img class="jingou-logo" src="assets/icon/logo.png"/>
     </ion-title>
     <ion-title color="light">
-      <span class="jingou-title">Total Daily Orders 25</span>
+      <span class="jingou-title">Menu</span>
     </ion-title>
   </ion-navbar>
 
@@ -37,28 +37,66 @@
   </div>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
   <ion-fab   bottom right>
     <button mini class="fab-icon-custom" style="border: 1px solid #000;box-shadow: 3px 3px 2px grey;" color="dark" ion-fab icon-only >
       <ion-icon  style="text-shadow: 2px 2px 5px #000;font-size: 1.5em" name="md-close"></ion-icon>
     </button>
+    <ion-fab-list side="top">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
   </ion-fab>
+  <ion-card  style="width: 80%;margin-left: 10%;box-shadow: none"  no-padding>
+    <div class="tab">
+      <input id="tab-one"[(ngModel)]="accordioncheckbox"  type="checkbox" name="tabs">
+      <label for="tab-one">
+        <div   no-padding no-margin text-center >
+          <ion-label color="white" style="font-size: 0.8em" no-margin no-padding>Opening & Delivering Times
+            <ion-icon *ngIf="accordioncheckbox" float-right margin-right="" style="font-size: 1.5em;margin-top: 0.6em" name="ios-arrow-down" color="white"></ion-icon>
+            <ion-icon *ngIf="!accordioncheckbox" float-right margin-right="" style="font-size: 1.5em;margin-top: 0.6em" name="ios-arrow-up" color="white"></ion-icon>
+          </ion-label>
+        </div>
+      </label>
+      <div class="tab-content">
+        <img src="assets/imgs/Open.png" class="open-icon">
+        <img src="assets/imgs/Delivering.png" class="open-icon">
+      </div>
+    </div>
+  </ion-card>
 
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
+  <ion-card >
+    <ion-item no-padding>
+      <img item-start class="offer1" src="assets/imgs/offer1.png">
+      <ion-label style="margin-left: 4em">
+        <span class="item-name">OFFERS</span>
+        <p>&nbsp;</p>
+      </ion-label>
+      <img class="offer2" src="assets/imgs/offer2.png" item-end>
+      <img class="item-loyalti-icon" src="assets/imgs/loyalt-Icon.png" item-end>
+      <ion-icon name="ios-arrow-dropright" color="primary" item-end></ion-icon>
+    </ion-item>
+  </ion-card>
+  <ion-card *ngFor="let menuitem of menu">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/grey.png">
+      </ion-avatar>
+      <ion-label>
+        <span class="item-name">{{menuitem.item}}</span>
+        <p class="item-details">
+          <b>12</b> items in This Menu Today
+        </p>
+      </ion-label>
+      <img class="item-loyalti-icon" src="assets/imgs/loyalt-Icon.png" item-end>
+      <ion-icon name="ios-arrow-dropright" color="primary" item-end></ion-icon>
+    </ion-item>
+  </ion-card>
+
 </ion-content>
 
 <!--<ion-footer >-->
