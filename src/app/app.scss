@@ -14,11 +14,48 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-app.md{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.nav-item{
+  min-height: 6em;
+}
+.nav-item-title{
+  margin-left: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-item-submenu{
+  font-size: 0.7em !important;
+}
+.nav-icons{
+  height: 2.2em;
+  vertical-align: middle;
+  display: inline-block;
 
+
+}
+.nav-icon-container{
+  width: 3em;
+  margin-left: 2em;
+  text-align: center;
+  display: inline-block;
+}
+.nav-img{
+  margin: 1em;
+  height: 8em;
+  width: 8em;
+  margin-left:auto ;
+  margin-right:auto ;
+  border-radius: 50%;
+  border: 0.05em solid #fff;
+  background: #3d3d3d;
+  box-shadow: 0px 0px 15px #000;
+
+}
 .menu-icon{
   margin-top: -1.2em !important;
   height: 1.4em;
-
 }
 .jingou-logo{
   margin-top: 0.8em;
@@ -79,11 +116,6 @@ ion-title {
   margin-left: 0.9em;
 }
 
-.header-md{
-  height: 4.5em !important;
-  display: inline-block;
-  background: color($colors,primary);
-}
 ion-navbar.toolbar{
   height: 100%;
 }
@@ -106,10 +138,6 @@ ion-navbar.toolbar{
 .crown-icon-text{
   margin-top: 0.4em;
   font-size: 0.7em;
-}
-ion-header{
-  box-shadow: 0px 5px 2px grey;
-
 }
 ion-content{
   text-align: justify;
